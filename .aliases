@@ -1,0 +1,53 @@
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# reload shell
+alias reload="exec $SHELL"
+
+# dns over tls
+alias dnstls="sudo /usr/local/opt/stubby/sbin/stubby-setdns-macos.sh"
+
+# ✨
+alias cat="bat"
+alias ls="exa"
+alias cd="z"
+
+# helper for default branch
+# https://stackoverflow.com/questions/28666357/git-how-to-get-default-branch
+alias gmb="git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
+
+# git aliases
+alias g="git"
+alias gb="git branch"
+alias gf="git fetch"
+alias gt="git tag"
+
+## git: new/switch project
+alias gcb="git checkout -b"
+alias gco="git checkout"
+alias gca="git add -A && git commit -m"
+alias gpo="git push origin"
+alias gpf="git push f"
+
+## git: update
+function gcm() { git checkout $(gmb) }
+function gpm() { git pull origin $(gmb) }
+function grbm() { git rebase $(gmb) }
+alias gpl="git pull"
+alias gps="git push"
+alias grbi="git rebase -i"
+alias grbc="git rebase --continue"
+alias grbs="git rebase --skip"
+alias grba="git rebase --abort"
+
+## git: destructive
+alias gbd="git branch -D"
+alias gtd="git tag -d"
+
+## git: last resort
+alias gfck="git add -A && git commit --amend --no-edit"
+alias gpsf="git push --force"
+alias gpff="git push f --force"

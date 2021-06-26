@@ -1,0 +1,10 @@
+{
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Large Aperture",
+  "workbench.preferredLightColorTheme": "Small Aperture",
+  "workbench.colorTheme": "Small Aperture",
+  "workbench.sideBar.location": "right",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+}

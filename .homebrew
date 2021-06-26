@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+brew install --cask rectangle
+brew install gh
+brew install antibody
+
+# Native shell replacement
+brew install bat # cat
+brew install exa # ls
+brew install zoxide # cd
+
+## 
+brew install tokei
+brew install procs
+brew install fd
+brew install ripgrep
+brew install git-delta
+brew install imagemagick
